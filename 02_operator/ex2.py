@@ -25,3 +25,4 @@ score = 85
 # 70점 미만이면 "D"
 
 grade = "A" if score >= 90 else ("B" if score >= 80 else ("C" if score >= 70 else "D"))
+print(grade)
