@@ -12,6 +12,9 @@ print(a % b)  # 나머지
 print(a // b)  # 몫
 print(a**b)
 
+# 10 / 3 = 3
+print(10 / 2)
+
 # 복합 대입 연산자
 a += 4
 print(a)
@@ -23,7 +26,7 @@ print(a)
 # b = a++// #오류
 a += 1
 
-# 비교 연산자
+# 비교 연산자``
 print(3 == 3.0)
 print(a != 4)
 print("apple" < "apble")
