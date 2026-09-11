@@ -129,7 +129,16 @@ stocks = (
 )
 
 # 총 재고 금액 출력
-total = sum(price * count for name, price, count in stocks)
+total = sum(price * count for _, price, count in stocks)
 print(f"총액: {total:,}원")
 
 # ✅ 총액: 21,000원
+
+stocks = (
+    ("사과", 1000, 5),
+    (1000, 2000, 5000),
+    (5, 3, 2),
+)
+
+total = sum(p * q for p, q in zip(stocks[1], stocks[2]))
+print(f"총액: {total}")
